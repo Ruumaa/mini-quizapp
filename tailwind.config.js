@@ -12,7 +12,25 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        roboto: ['var(--font-roboto)'],
+        poppins: ['var(--font-poppins)'],
+      },
     },
   },
-  plugins: [],
-}
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: '#454ADE',
+          secondary: '#0077b6',
+          accent: '#00b4d8',
+          neutral: '#90e0ef',
+          'base-100': '#edf2f4',
+        },
+      },
+      // 'light',
+    ],
+  },
+  plugins: [require('daisyui')],
+};
